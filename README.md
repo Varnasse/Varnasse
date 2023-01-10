@@ -7,7 +7,7 @@ Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on cybersecurity projects!
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
-- 📫 How to reach me: @Varnasse on Twitter, Daniel Nelson#0551 on Discord or https://www.linkedin.com/in/danjnelson95/
+- 📫 How to reach me on [Twitter](https://twitter.com/Varnasse), Daniel Nelson#0551, [LinkedIn](https://www.linkedin.com/in/danjnelson95/) or on [Reddit](https://www.reddit.com/user/varnass3) 
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I am in the process of completing my private pilot licence and have flown several times solo!
 -->
