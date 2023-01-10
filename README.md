@@ -1,6 +1,5 @@
-### Hi there 👋
-
-Here are some ideas to get you started:
+### Hello, my name is Dan.👋
+![Screenshot_20201224-151742_Photos](https://user-images.githubusercontent.com/89726635/211514567-fc082e5b-f035-4a79-97b3-19ed84d2d34a.jpg)
 
 - 🔭 I’m currently working on HyperionDev's Software Engineering Bootcamp!
 - 🌱 I’m currently learning Python, OOP, SQL, Django and HTML/CSS, as well as, working towards the AWS DevOps Engineer Professional certificate.
@@ -11,3 +10,4 @@ Here are some ideas to get you started:
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I am in the process of completing my private pilot licence and have flown several times solo!
 -->
+
