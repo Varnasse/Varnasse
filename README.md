@@ -9,5 +9,5 @@
 - 📫 You can reach me on [Twitter](https://twitter.com/Varnasse), [Discord](https://discord.com/channels/@me), [LinkedIn](https://www.linkedin.com/in/danjnelson95/) or on [Reddit](https://www.reddit.com/user/varnass3) 
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I am in the process of completing my private pilot licence and have flown several times solo!
--->
+
 
