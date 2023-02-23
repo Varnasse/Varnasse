@@ -63,5 +63,95 @@
   * By Amazon EventBridge
   * On a schedule using Maintenance Windows
   * By AWS Config for rules remediations
-*
+
+### SSN Parameter Store
+
+* Secure storage for configuration and secrets
+* Optional seamless encryption using KMS
+* Serverless, scalable, durable, easy SDK
+* Version tracking of configurations / secrets
+* Security through IAM
+* Notifications with Amazon EventBridge
+
+#### SSM Parameter Store Hierarchy
+
+* /my-department
+  * my-app/
+    * dev/
+      * db-url
+      * db-password
+    * prod/
+      * db-url
+      * db-password
+  * other-app
+* other-department/
+
+#### Parameter Policies
+
+* Allow a time-to-live to a parameter (Expiration date) to force updating or deleting sensitive data
+* Can assign multiple policies at a time
+
+### SSM Inventory & State Manager
+
+* Collect metadata from your managed instances
+* Metadata includes installed software, OS drivers, configurations, installed updates
+* View data in AWS console or store in S3 and query and analyse using Athena or QuickSight
+* Specify metadata collection interval (minutes, hours, days)
+* Query data from multiple AWS accounts and regions
+* Create custom inventory for your custom metadata (e.g. rack location of each managed instance)
+
+#### SSM - State Manager
+
+* Automate the process of keeping your managed instances (EC2/On-premises) in a state that you define
+* Use cases: bootstrap instances with software, patch OS/software updates on a schedule
+* State Manager Association:
+  * Defines the state that you want to maintain to your managed instances
+  * Example: port 22 must be closed, antivirus must be installed
+  * Specify a schedule when this configuration is applied
+* Uses SSM Documents to create an Association (e.g. SSM Document to configure CloudWatch agent)
+
+### SSM - Patch Manager
+
+* Automates the process of patching managed instances
+* OS updates, application updates, security updates
+* Supports both EC2 instances and on-premises servers
+* Patch on-demand or on a schedule using Maintenance Windows
+* Scan instances and generate patch compliance report (missing patches)
+
+#### Patch Baseline
+
+* Defines which patches should and shouldn't be installed&#x20;
+* Ability to create custom patch baselines
+* Patches can be auto-approved within days of their release
+* By default, install only critical patches and patches related to security
+
+#### Patch Group
+
+* Associate a set of instances with a specific Patch Baseline
+* Example: create Patch Groups for different environments
+* Instances should be defined with the tag key Patch Group
+* An instance can only be in one Patch Group
+* Patch Group can be registered with only one Patch Baseline
+
+### SSM - Session Manager
+
+* Allows you to start a secure shell on your EC2 and on-premises servers
+* Access through AWS Console, AWS CLI, or Session Manager SDK
+* Does not need SSH access, bastion hosts or SSH keys]
+* Log connections to your instancces and executed commands
+* Session log data can be sent to S3 or CloudWatch logs
+* CloudTrail can intercept StartSession event
+* IAM Permissions
+  * Control which users/groups can access Session manager and which instances
+  * Use tags to restrict access to only specific EC2 instances
+  * Access SSM + write to S3 + write to CloudWatch
+
+### AWS OpsWorks Overview
+
+* Chef & Puppet help you perform server configuration automatically or repetitive actions
+* They work great with EC2 and on-premises VMs
+* AWS OpsWorks = Managed Chef and Puppet
+* It's an alternative to AWS SSM
+
+
 
